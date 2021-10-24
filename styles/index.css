@@ -1,5 +1,5 @@
 main {
-    height: 550px;
+    height: 100vh;
     background: radial-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(../assets/background_home.jpg);
     background-size: cover;
     background-position: center;

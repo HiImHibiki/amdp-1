@@ -1,0 +1,46 @@
+main {
+    background: url(../assets/background_menu.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 2rem;
+}
+
+main {
+    height: 100vh;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    margin: 0 1rem;
+    border-radius: 25px;
+    color: black;
+}
+
+.menu-item img {
+    width: 100px;
+}
+
+.menu-item p {
+    margin-top: 1rem;
+}
+
