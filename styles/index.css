@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    font-weight: bold;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(to bottom right, rgba(28,36,58,1), rgba(79,102,161,1));
+    color: white;
+}
+
+.left-header img {
+    width: 150px;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    margin: 0 0.5rem;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+}
+
+.nav-button {
+    padding: 1rem 0;
+    width: 7rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-button-active {
+    color: #333333;
+    background-color: #80F1FE;
+}
+
+.nav-button:hover {
+    color: #333333;
+    background-color: #80F1FE;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    top: 140px;
+    position: absolute;
+    background-color: #333333;
+}
+
+.dropdown-menu:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 550px;
+    background: radial-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(../assets/background_home.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+main h1 {
+    font-weight: bolder;
+}
+
+main p {
+    font-size: 23px;
+    margin: 2rem 0;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background-color: #333333;
+}
+
+footer {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .header-container{
+        flex-direction: column;
+    }
+
+    .left-header img{
+        width: 200px;
+    }
+
+    .header-button {
+        font-size: medium;
+        width: 8rem;
+    }
+
+    .dropdown-content {
+        top: 200px;
+    }
+    
+}
