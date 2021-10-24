@@ -7,6 +7,15 @@ main{
     justify-content: center;
 }
 
+.form-class{
+    margin-top: 3rem;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
 input{
     outline: 0;
 }
@@ -14,23 +23,9 @@ input{
 .input-text, .input-text:focus{
     border: none;
     border-bottom: 1px solid black;
-    width: 100%;
+    width: 15rem;
     margin: 1rem 0;
 }
-
-input[type=radio]{
-    margin: 1rem 0;
-}
-
-#female{
-    margin-left: 1rem;
-}
-
-#city{
-    width: 100%;
-    margin-top: 0.5rem;
-}
-
 
 .button-container{
     display: flex;
@@ -56,5 +51,13 @@ input[type=radio]{
     cursor: pointer;
 }
 
+.text{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
 
-
+.text a{
+    text-decoration: none;
+    color: blue;
+}

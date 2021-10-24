@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAM DINER</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/login.css">
 </head>
 <body>
-    
+    <header>
+        <div class="header-container">
+            <div class="left-header">
+                <img src="./assets/logo.svg" alt="logo">
+            </div>
+            <div class="right-header">
+                <div class="header-button">REGISTER</div>
+                <div class="header-button">LOGIN</div>
+            </div>
+        </div>
+        
+        <div class="nav-container">
+            <a href="./index.html" class="nav-button nav-button-active">HOME</a>
+            <div class="dropdown-menu">
+                <a href="./menu.html" class="nav-button">MENU</a>
+                <div class="dropdown-content">
+                    <a href="./burger.html" class="nav-button">BURGER</a>
+                    <a href="./burger.html" class="nav-button">RICE & PASTA</a>
+                    <a href="./burger.html" class="nav-button">SEAFOOD</a>
+                </div>
+            </div>
+            <a href="./about.html" class="nav-button">ABOUT US</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Login</h2>
+        </div>
+        
+        <div class="form-class">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="email-input input-text" id="email">
+            <br>
+            <label for="password">Password</label>
+            <input type="text" name="password" class="password-input input-text" id="password">
+        </div>
+        
+        <div class="button-container">
+            <div class="submit-button">
+                Login
+            </div>
+        </div>
+
+        <div class="text">
+            <p>Want to join us? Register <a href="./register.html">here!</a></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="logo-container">
+            <img src="./assets/twitter.png" alt="twitter">
+            <img src="./assets/facebook.png" alt="facebook">
+            <img src="./assets/instagram.png" alt="instagram">
+        </div>
+        <p>Copyright &#169; 2021 Mario Rufisanto. All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
