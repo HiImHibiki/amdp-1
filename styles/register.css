@@ -1,0 +1,35 @@
+main{
+    margin: 0 30rem;
+    /* border: 2px solid black; */
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+input{
+    outline: 0;
+}
+
+.inputText, .inputText:focus{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+input[type=radio]{
+    margin: 1rem 0;
+}
+
+#female{
+    margin-left: 1rem;
+}
+
+#city{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+

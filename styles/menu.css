@@ -11,6 +11,7 @@ main {
 }
 
 h1 {
+    font-size: 50px;
     margin: 2rem;
 }
 
@@ -21,7 +22,7 @@ main {
 .menu-container {
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .menu-item {
@@ -34,13 +35,28 @@ main {
     margin: 0 1rem;
     border-radius: 25px;
     color: black;
+    overflow: hidden;
 }
+
+.popular {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular h2 {
+    padding: 0 2rem;
+    font-size: 20px;
+    color: white;
+    background-color: #FFD700;
+}
+
 
 .menu-item img {
     width: 100px;
+    height: 100px;
+    margin: 2rem 0;
 }
 
-.menu-item p {
-    margin-top: 1rem;
-}
 
