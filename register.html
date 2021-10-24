@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/register.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-header">
+                <img src="./assets/logo.svg" alt="logo">
+            </div>
+            <div class="right-header">
+                <div class="header-button">REGISTER</div>
+                <div class="header-button">LOGIN</div>
+            </div>
+        </div>
+        
+        <div class="nav-container">
+            <a href="./index.html" class="nav-button nav-button-active">HOME</a>
+            <div class="dropdown-menu">
+                <a href="./menu.html" class="nav-button">MENU</a>
+                <div class="dropdown-content">
+                    <a href="./burger.html" class="nav-button">BURGER</a>
+                    <a href="./burger.html" class="nav-button">RICE & PASTA</a>
+                    <a href="./burger.html" class="nav-button">SEAFOOD</a>
+                </div>
+            </div>
+            <a href="./about.html" class="nav-button">ABOUT US</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Register</h2>
+        </div>
+
+        <div class="formClass">
+            <label for="name">Name: </label> <br>
+            <input type="text" name="name" class="nameInput inputText" id="name">
+            <label for="email">Email: </label> <br>
+            <input type="email" name="email" class="emailInput inputText" id="email">
+            <label for="gender">Gender</label> <br>
+            <input type="radio" name="gender" class="" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" class="" value="female" id="female">
+            <label for="female">Female</label>
+            <br>
+            <label for="cities">City:</label> <br>
+            <input list="cities" name="city" id="city">
+            <datalist id="cities">
+                <option value="Jakarta">
+                <option value="Tangerang">
+                <option value="Banten">
+            </datalist>
+            <br>
+            <label for=""></label>
+
+        </div>
+    </main>
+
+
+
+
+    <!-- <footer>
+        <div class="logo-container">
+            <img src="./assets/twitter.png" alt="twitter">
+            <img src="./assets/facebook.png" alt="facebook">
+            <img src="./assets/instagram.png" alt="instagram">
+        </div>
+        <p>Copyright &#169; 2021 Mario Rufisanto. All Rights Reserved</p>
+    </footer> -->
+</body>
+</html>
