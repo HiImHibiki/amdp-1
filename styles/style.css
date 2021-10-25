@@ -14,6 +14,11 @@ header {
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+    color: unset;
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -44,6 +49,12 @@ header {
     margin: 0 0.5rem;
 }
 
+.header-button:hover, .nav-button:hover {
+    transition: 0.5s;
+    color: #333333;
+    background-color: #80F1FE;
+}
+
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -54,16 +65,10 @@ header {
     padding: 1rem 0;
     width: 7rem;
     text-align: center;
-    text-decoration: none;
     color: white;
 }
 
 .nav-button-active {
-    color: #333333;
-    background-color: #80F1FE;
-}
-
-.nav-button:hover {
     color: #333333;
     background-color: #80F1FE;
 }

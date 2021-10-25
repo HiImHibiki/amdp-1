@@ -27,3 +27,9 @@ main a {
     border-radius: 25px;
     background-color: #333333;
 }
+
+main a:hover {
+    transition: 0.5s;
+    color: #333333;
+    background-color: #80F1FE;
+}
