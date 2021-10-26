@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/login.css">
+    <script defer src="./scripts/user.js"></script>
+    <title>FAM DINER</title>
 </head>
 <body>
     <header>
@@ -23,11 +24,11 @@
         <div class="nav-container">
             <a href="./index.html" class="nav-button">HOME</a>
             <div class="dropdown-menu">
-                <a href="./menu.html" class="nav-button">MENU</a>
+                <a href="./menu.html?id=1" class="nav-button">MENU</a>
                 <div class="dropdown-content">
-                    <a href="./burger.html" class="nav-button">BURGER</a>
-                    <a href="./burger.html" class="nav-button">RICE & PASTA</a>
-                    <a href="./burger.html" class="nav-button">SEAFOOD</a>
+                    <a href="./menu.html?id=1" class="nav-button">BURGER</a>
+                    <a href="./menu.html?id=2" class="nav-button">RICE & PASTA</a>
+                    <a href="./menu.html?id=3" class="nav-button">SEAFOOD</a>
                 </div>
             </div>
             <a href="./about.html" class="nav-button">ABOUT US</a>
@@ -35,28 +36,16 @@
     </header>
 
     <main>
-        <div class="title">
-            <h2>Login</h2>
-        </div>
-        
-        <div class="form-class">
+        <h2>Login</h2>
+        <form name="login-form" class="login-form" action="index.html" onsubmit="return validateLogin()" method="post">
             <label for="email">Email</label>
             <input type="text" name="email" class="email-input input-text" id="email">
             <br>
             <label for="password">Password</label>
             <input type="text" name="password" class="password-input input-text" id="password">
-        </div>
-        
-        <div class="button-container">
-            <div class="submit-button">
-                Login
-            </div>
-        </div>
-
-        <div class="text">
-            <p>Want to join us? Register <a href="./register.html">here!</a></p>
-        </div>
-
+            <input type="submit" value="Login" class="submit-button">
+        </form>
+        <p class="text">Want to join us? Register <a href="./register.html">here!</a></p>
     </main>
 
     <footer>
@@ -67,6 +56,5 @@
         </div>
         <p>Copyright &#169; 2021 Mario Rufisanto. All Rights Reserved</p>
     </footer>
-
 </body>
 </html>

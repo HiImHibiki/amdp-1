@@ -1,5 +1,4 @@
 main {
-    height: 100vh;
     background: radial-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(../assets/background_home.jpg);
     background-size: cover;
     background-position: center;
@@ -32,4 +31,10 @@ main a:hover {
     transition: 0.5s;
     color: #333333;
     background-color: #80F1FE;
+}
+
+@media screen and (max-width: 600px) {
+    main p {
+        font-size: 18px;
+    }
 }

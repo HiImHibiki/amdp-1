@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/menu.css">
+    <script defer src="./scripts/menu.js"></script>
     <title>FAM DINER</title>
 </head>
 <body>
@@ -23,39 +24,97 @@
         <div class="nav-container">
             <a href="./index.html" class="nav-button">HOME</a>
             <div class="dropdown-menu">
-                <a href="./menu.html" class="nav-button nav-button-active">MENU</a>
+                <a href="./menu.html?id=1" class="nav-button nav-button-active">MENU</a>
                 <div class="dropdown-content">
-                    <a href="./menu.html" class="nav-button">BURGER</a>
-                    <a href="./menu.html" class="nav-button">RICE & PASTA</a>
-                    <a href="./menu.html" class="nav-button">SEAFOOD</a>
+                    <a href="./menu.html?id=1" class="nav-button">BURGER</a>
+                    <a href="./menu.html?id=2" class="nav-button">RICE & PASTA</a>
+                    <a href="./menu.html?id=3" class="nav-button">SEAFOOD</a>
                 </div>
             </div>
             <a href="./about.html" class="nav-button">ABOUT US</a>
         </div>
     </header>
     <main>
-        <h1>BURGER</h1>
-        <p>A circular shaped grounded meat jammed between two buns and usually accompanied with 
-            cheese, sauce, and vegetables. It is a classic delicacy for diner type restaurant.</p>
-        <div class="menu-container">
-            <div class="menu-item">
-                <img src="./assets/kromer_burger.png" alt="kromer">
-                <div class="popular">
-                    <p>Kromer Burger</br></br>Rp. 50,000</p>
-                    <h2>MOST POPULAR</h2>
+        <div class="menu">
+            <h1>BURGER</h1>
+            <p>A circular shaped grounded meat jammed between two buns and usually accompanied with 
+                cheese, sauce, and vegetables. It is a classic delicacy for diner type restaurant.</p>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="./assets/kromer_burger.png" alt="kromer">
+                    <div class="popular">
+                        <p>Kromer Burger</br></br>Rp. 50,000</p>
+                        <h2>MOST POPULAR</h2>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/cheeseburger.png" alt="cheeseburger">
+                    <p>Cheese Burger</br></br>Rp. 25,000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/chicken_burger.png" alt="chiken">
+                    <p>Chiken Burger</br></br>Rp. 35,000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/hopper_burger.png" alt="hopper">
+                    <p>Hopper Burger</br></br>Rp. 40,000</p>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="./assets/cheeseburger.png" alt="cheeseburger">
-                <p>Cheese Burger</br></br>Rp. 25,000</p>
+        </div>
+
+        <div class="menu">
+            <h1>Rice and Pasta</h1>
+            <p>Rice and Pasta dishes are considered one of the most popular dishes in the world.
+                Combined with many toppings and rich-flavoured spices, these dishes are one of the most
+                delicious source of starches you can get.</p>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="./assets/chicken_ricebowl.png" alt="chicken_rice" style="height: 100px;">
+                    <div class="popular">
+                        <p>Chicken Riceborl</br></br>Rp. 50,000</p>
+                        <h2>MOST POPULAR</h2>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/egg_fried_rice.png" alt="egg_fried_rice">
+                    <p>Egg Fried Rice</br></br>Rp. 35,000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/spaghetti.png" alt="spaghetti">
+                    <p>Spaghetti</br></br>Rp. 45,000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/lasagna.png" alt="lasagna">
+                    <p>Lasagna</br></br>Rp. 45,000</p>
+                </div>
             </div>
-            <div class="menu-item">
-                <img src="./assets/chicken_burger.png" alt="chiken">
-                <p>Chiken Burger</br></br>Rp. 35,000</p>
-            </div>
-            <div class="menu-item">
-                <img src="./assets/hopper_burger.png" alt="hopper">
-                <p>Hopper Burger</br></br>Rp. 40,000</p>
+        </div>
+
+        <div class="menu">
+            <h1>Seafood</h1>
+            <p>The ocean is full of nature's most bountiful food resources to the world. Sealifes such 
+                fish, shrimp, mussels are one of world's most consumed source of protein. These dishes
+                are surely to die for.</p>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="./assets/fish.png" alt="fish">
+                    <div class="popular">
+                        <p>Fish</br></br>Rp. 60,000</p>
+                        <h2>MOST POPULAR</h2>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/Oyster.png" alt="Oyster">
+                    <p>Oyster</br></br>Rp. 55,000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/Prawn.png" alt="Prawn">
+                    <p>Prawn</br></br>Rp. 45,000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/squid.png" alt="squid">
+                    <p>Squid</br></br>Rp. 50,000</p>
+                </div>
             </div>
         </div>
     </main>

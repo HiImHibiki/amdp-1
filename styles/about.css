@@ -1,5 +1,4 @@
 main {
-    height: 100vh;
     background-color: #1E1F26;
     color: white;
     display: flex;
@@ -23,4 +22,10 @@ p {
 
 .about-container h2 {
     margin: 2rem 0 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    main p, main h2 {
+        padding: 0 1rem;
+    }
 }

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/register.css">
+    <script defer src="./scripts/user.js"></script>
+    <title>FAM DINER</title>
 </head>
 <body>
     <header>
@@ -23,11 +24,11 @@
         <div class="nav-container">
             <a href="./index.html" class="nav-button">HOME</a>
             <div class="dropdown-menu">
-                <a href="./menu.html" class="nav-button">MENU</a>
+                <a href="./menu.html?id=1" class="nav-button">MENU</a>
                 <div class="dropdown-content">
-                    <a href="./burger.html" class="nav-button">BURGER</a>
-                    <a href="./burger.html" class="nav-button">RICE & PASTA</a>
-                    <a href="./burger.html" class="nav-button">SEAFOOD</a>
+                    <a href="./menu.html?id=1" class="nav-button">BURGER</a>
+                    <a href="./menu.html?id=2" class="nav-button">RICE & PASTA</a>
+                    <a href="./menu.html?id=3" class="nav-button">SEAFOOD</a>
                 </div>
             </div>
             <a href="./about.html" class="nav-button">ABOUT US</a>
@@ -35,20 +36,19 @@
     </header>
 
     <main>
-        <div class="title">
-            <h2>Register</h2>
-        </div>
-
-        <div class="formClass">
+        <h2>Register</h2>
+        <form name="register-form" class="register-form" action="login.html" onsubmit="return validateRegister()" method="post">
             <label for="name">Name: </label> <br>
             <input type="text" name="name" class="name-input input-text" id="name">
             <label for="email">Email: </label> <br>
             <input type="email" name="email" class="email-input input-text" id="email">
             <label for="gender">Gender</label> <br>
-            <input type="radio" name="gender" class="" value="male" id="male">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" class="" value="female" id="female">
-            <label for="female">Female</label>
+            <div class="gender-container">
+                <input type="radio" name="gender" class="" value="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" class="" value="female" id="female">
+                <label for="female">Female</label>
+            </div>
             <br>
             <label for="cities">City:</label> <br>
             <input list="cities" name="city" id="city">
@@ -59,17 +59,11 @@
             </datalist>
             <br> <br>
             <label for="password" class="pass-label">Password:</label> <br>
-            <input type="text" name="password" class="pass-input input-text" id="password"> <br>
+            <input type="password" name="password" class="pass-input input-text" id="password"> <br>
             <label for="conf-password">Confirm password:</label> <br>
-            <input type="text" name="password" class="conf-pass-input input-text" id="conf-password">
-        </div>
-        
-        <div class="button-container">
-            <div class="submit-button">
-                Register
-            </div>
-        </div>
-
+            <input type="password" name="conf-password" class="conf-pass-input input-text" id="conf-password">
+            <input type="submit" value="Register" class="submit-button">
+        </form>
     </main>
 
     <footer>
